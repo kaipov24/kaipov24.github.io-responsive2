@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,700i|Roboto+Slab:300,400,700&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Studio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- Sprite-->
+<svg style="display: none;">
+    <symbol id="facebook"  viewBox="0 0 96.124 96.123">
+        <g>
+            <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+        </g>
+
+    </symbol>
+    <symbol id="twitter"  viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+
+    </symbol>
+    <symbol id="Capa_1"  viewBox="0 0 512 512">
+        <g>
+            <path d="M362.667,68.188V10.667C362.667,4.771,357.896,0,352,0h-64c-4.104,0-7.854,2.354-9.625,6.063l-17.479,36.552
+                c-0.406,0-0.823,0.01-1.219,0.01L256,42.667c-129.396,0-234.667,105.271-234.667,234.667c0,40.083,10.417,79.792,30.115,114.833
+                c1.948,3.458,5.74,5.531,9.656,5.427c3.979-0.125,7.552-2.458,9.271-6.052l24.042-50.271c1.208-2.531,1.375-5.448,0.458-8.094
+                c-6.333-18.271-9.542-37.063-9.542-55.844c0-84.802,61.906-155.656,144-168.708L43.708,496.729
+                c-1.583,3.302-1.354,7.188,0.604,10.292c1.948,3.104,5.354,4.979,9.021,4.979h64c4.271,0,8.125-2.542,9.802-6.469l61.229-142.865
+                H288v10.667c0,4.104,2.354,7.833,6.042,9.615c3.708,1.792,8.083,1.271,11.292-1.281L358.667,339c2.531-2.031,4-5.094,4-8.333
+                c0-3.24-1.469-6.302-4-8.333l-53.333-42.667c-3.219-2.573-7.625-3.083-11.292-1.281c-3.688,1.781-6.042,5.51-6.042,9.615v10.667
+                h-68.833L288,145.698v99.635c0,3.24,1.469,6.302,4,8.333l53.333,42.667c3.188,2.563,7.594,3.052,11.292,1.281
+                c3.688-1.781,6.042-5.51,6.042-9.615V144.417c40.406,32.417,64,80.802,64,132.917c0,53.753-25.039,101.707-64,133.014v-37.014
+                c0-4.104-2.354-7.833-6.042-9.615c-3.708-1.781-8.094-1.281-11.292,1.281L292,407.667c-3.531,2.833-4.896,7.594-3.396,11.865
+                c1.5,4.271,5.531,7.135,10.063,7.135h39.773C313.98,440.225,285.892,448,256,448c-22.042,0-43.646-4.24-64.208-12.604
+                c-5.375-2.146-11.531,0.344-13.823,5.688l-16.813,39.24c-1.125,2.625-1.156,5.594-0.073,8.229c1.083,2.646,3.177,4.75,5.823,5.833
+                C195.333,506.073,225.313,512,256,512c129.396,0,234.667-105.271,234.667-234.667C490.667,189.708,440.646,108.354,362.667,68.188
+                z"/>
+        </g>
+
+    </symbol>
+    <symbol id="Bold"  viewBox="new 0 0 24 24">
+        <g>
+            <g>
+                <path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
+            </g>
+
+</svg>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="./images/Logo-Treehouse.png" alt="">
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="" data-scroll="#intro">Home</a>
+                    <a class="nav__link" href="" data-scroll="#services">Services</a>
+                    <a class="nav__link" href="" data-scroll="#portfolio">Portfolio</a>
+                    <a class="nav__link" href="" data-scroll="#about">About</a>
+                    <a class="nav__link" href="" data-scroll="#footer">Contact</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <a href="#" class="burger__item">Menu</a>
+                </button>
+            </div>
+       
+        </div>
+    </header>
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <p class="intro__subtitle"> Welcome To Our Studio!</p>
+                <h1 class="intro__title">It’s nice to Meet you</h1>
+                <a class="btn btn--yellow">Tell Me More</a>
+            </div>
+        </div>
+    </div>    
+    <div class="container">
+        <div class="services" id="services">
+            <h2 class="services__title">Services</h2>
+            <p class="services__suptitle">Proin iaculis purus consequat sem cure. </p>
+            <div class="items">
+                <div class="services__item">
+                    <img src="./images/services_logos/e-commerce.png" alt="">
+                    <div class="item__title">
+                        E-Commerce
+                    </div>
+                    <div class="item__text">
+                        Proin iaculis purus consequat sem cure 
+                        digni ssim. Donec porttitora entum suscipit 
+                        aenean rhoncus posuere odio in tincidunt.
+                    </div>
+                </div>
+                <div class="services__item">
+                    <img src="./images/services_logos/responsive.png" alt="">
+                    <div class="item__title">
+                        Responsive Web
+                    </div>
+                    <div class="item__text">
+                        Proin iaculis purus consequat sem cure 
+                        digni ssim. Donec porttitora entum suscipit 
+                        aenean rhoncus posuere odio in tincidunt.
+                    </div>
+                </div>
+                <div class="services__item">
+                    <img src="./images/services_logos/websecurity.png" alt="">
+                    <div class="item__title">
+                        Responsive Web
+                    </div>
+                    <div class="item__text">
+                        Proin iaculis purus consequat sem cure 
+                        digni ssim. Donec porttitora entum suscipit 
+                        aenean rhoncus posuere odio in tincidunt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="portfolio__title">Our portfolio</h2>
+            <p class="portfolio__suptitle">Proin iaculis purus consequat sem cure. </p>
+            <div class="portfolio__inner">
+                <div class="portfolio__item">
+                    <img class="portfolio__img" src="./images/portfolio/1.png" alt="">
+                    <h4 class="portfolio__img__title">Ebony & Ivory</h4>
+                    <p class="portfolio__img__text">Branding</p>
+                </div>
+                <div class="portfolio__item">
+                    <img class="portfolio__img" src="./images/portfolio/2.png" alt="">
+                    <h4 class="portfolio__img__title">Smart Stationary</h4>
+                    <p class="portfolio__img__text">Print Design</p>
+                </div>
+                <div class="portfolio__item">
+                    <img class="portfolio__img" src="./images/portfolio/3.png" alt="">
+                    <h4 class="portfolio__img__title">Clever Poster</h4>
+                    <p class="portfolio__img__text">Print Design</p>
+                </div>
+                <div class="portfolio__item">
+                    <img class="portfolio__img" src="./images/portfolio/4.png" alt="">
+                    <h4 class="portfolio__img__title">Vinyl Record</h4>
+                    <p class="portfolio__img__text">Product Mock-Up</p>
+                </div>
+                <div class="portfolio__item">
+                    <img class="portfolio__img" src="./images/portfolio/5.png" alt="">
+                    <h4 class="portfolio__img__title">Treehouse Template</h4>
+                    <p class="portfolio__img__text">Web Design</p>
+                </div>
+                <div class="portfolio__item">
+                    <img class="portfolio__img" src="./images/portfolio/6.png" alt="">
+                    <h4 class="portfolio__img__title">Burned Logo</h4>
+                    <p class="portfolio__img__text">Branding</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <h3 class="about__title">About Us</h3>
+            <p class="about__suptitle">Proin iaculis purus consequat sem cure. </p>
+            <div class="about__inner">
+                 <div class="about__item about--left">
+                     <div class="about__content">
+                        <h4 class="item__title">July 2010
+                            </h4> 
+                        <h5 class="item__suptitle">Our Humble Beginnings</h5>
+                        <p class="item__text">Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni 
+                            ssim. Donec porttitora entum suscipit.</p>
+                    </div>
+                    <img src="./images/about/1.png" alt="" class="about__img">
+                            
+                 </div>
+                 <div class="about__item about--right">
+                     <img src="./images/about/2.png" alt="" class="about__img">
+                     <div class="about__content">
+                        <h4 class="item__title">January 2011
+                            </h4> 
+                        <h5 class="item__suptitle">Facing Startup Battles</h5>
+                        <p class="item__text">Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni 
+                            ssim. Donec porttitora entum suscipit aenean 
+                            rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                 </div>
+                 <div class="about__item about--left">
+                    <div class="about__content">
+                        <h4 class="item__title">December 2012
+                            </h4> 
+                        <h5 class="item__suptitle">Enter The Dark Days</h5>
+                        <p class="item__text">Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni.</p>
+                    </div>
+                    <img src="./images/about/3.png" alt="" class="about__img">
+                 </div>
+                 <div class="about__item about--right">
+                     <img src="./images/about/4.png" alt="" class="about__img">
+                     <div class="about__content">
+                        <h4 class="item__title">february 2014
+                            </h4> 
+                        <h5 class="item__suptitle">Our Triumph</h5>
+                        <p class="item__text">Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni 
+                            ssim. Donec porttitora entum suscipit aenean.</p>
+                     </div>
+                 </div>
+                 <div class="about__item about--yellow">
+                     <img src="./images/yellow.png" alt="">
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="team" id="team">
+        <div class="container">
+            <h2 class="team__title">our amazing team</h2>
+            <p class="team__suptitle">Proin iaculis purus consequat sem cure. </p>
+            <div class="team__inner">
+                <div class="team__item">
+                    <img src="./images/team/Lacazette_1045x658_0.jpg" alt="" class="team__photo">
+                    <h5 class="team__name">Kimberly Thompson
+                        </h5>
+                    <p class="team__position">Marketer</p>
+                    <div class="social">
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#Capa_1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="./images/team/Aubameyang_1045x658.jpg" alt="" class="team__photo">
+                    <h5 class="team__name">Rico Massimo
+                        </h5>
+                    <p class="team__position">Coder</p>
+                    <div class="social">
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#Capa_1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="./images/team//Martinelli_1045x658.jpg" alt="" class="team__photo">
+                    <h5 class="team__name">Uku Mason
+                        </h5>
+                    <p class="team__position">Graphic Designer</p>
+                    <div class="social">
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#Capa_1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="team__text">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit  
+                aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+        </div>
+    </div>
+    <div class="cms" id="cms">
+         <div class="container">
+             <div class="cms__inner">
+                 <div class="cms__item">
+                     <img src="./images/cms/Envato.png" alt="" class="cms__img">
+                 </div>
+                 <div class="cms__item">
+                     <img src="./images/cms/WordPress.png" alt="" class="cms__img">
+                 </div>
+                 <div class="cms__item">
+                     <img src="./images/cms/Tuts+.png" alt="" class="cms__img">
+                 </div>
+                 <div class="cms__item">
+                     <img src="./images/cms/Microlancer_copy.png" alt="" class="cms__img">
+                 </div>
+             </div>
+         </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <h3 class="contact__title">Contact us</h3>
+            <div class="contact__suptitle">Proin iaculis purus consequat sem cure. </div>
+            <div class="contact__inner">
+                <div class="contact__item">
+                    <input type="text" class="info__item" placeholder="your Name *" size="45"></input>
+                    <input type="text" class="info__item" placeholder="your e-mail *" size="45"></input>
+                    <input type="text" class="info__item" placeholder="subject" size="45"></input>
+                </div>
+                <textarea name="comment" cols="130" rows="10" class="contact__item" placeholder="Your message *"></textarea>
+                <div class="contact__map">
+                    <img src="./images/Map_Image.png" alt="">
+                </div>
+            </div>
+            <a class="btn btn--yellow">Send Message</a>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <p class="footer__copyright">© Copyright 2014 FreebiesXpress.com</p>
+                </div>
+                <div class="footer__item">
+                    <div class="social">
+                        <a class="social__item social--footer" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item social--footer" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item social--footer" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#Capa_1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
